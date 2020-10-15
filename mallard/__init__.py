@@ -1,0 +1,1 @@
+from .mallard import Mallard
