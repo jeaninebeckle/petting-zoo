@@ -14,6 +14,4 @@ class Anaconda():
 	def __str__(self):
 		return (f'{self.name} is an {self.species}')
 		
-anaconda = Anaconda('Aragorn', 'anaconda', 'anaconda chow')
 
-print(anaconda)
