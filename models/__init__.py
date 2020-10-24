@@ -15,3 +15,5 @@ from .animals.sheep import Sheep
 from .animals.swan import Swan
 
 from .attractions.pettingzoo import PettingZoo
+from .attractions.snakepit import SnakePit
+from .attractions.wetlands import Wetlands

@@ -27,18 +27,18 @@ slither_inn = SnakePit('Slither Inn', 'animalss that might want to eat you')
 critter_cove = Wetlands('Critter Cove', 'fish and feathered friends')
 
 donkey = Donkey('Donnie Darko', 'donkey', 'morning', 'donkey chow')
-goat = Goat('Gandalf the Grey', 'goat', 'midday', 'goat chow')
+goat = Goat('Gandalf the Grey', 'goat', 'midday', 'goat chow', 2340834)
 llama = Llama('Luna Lovegood', 'llama', 'afternoon', 'llama chow')
 sheep = Sheep('Spongebob Squarepants', 'sheep', 'morning', 'krabby patties')
 pig = Pig('Peter Pan', 'pig', 'afternoon', 'pig chow')
 
-anaconda = Anaconda('Aragorn', 'anaconda', 'anaconda chow')
+anaconda = Anaconda('Aragorn', 'anaconda', 'anaconda chow', 34574579)
 copperhead = Copperhead('Captain Crunch', 'copperhead', 'cereal')
 cottonmouth = Cottonmouth('Chewbacca', 'cottonmouth', 'babies')
 kingsnake = Kingsnake('Kirby', 'kingsnake', 'mice')
 python = Python('Peter Pettigrew', 'python', 'python chow')
 
-bass = Bass('Beetlejuice', 'bass', 'bass chow')
+bass = Bass('Beetlejuice', 'bass', 'bass chow', 3204803)
 catfish = Catfish('Cheshire Cat', 'catfish', 'catfish chow')
 goldfish = Goldfish('Godzilla', 'goldfish', 'goldfish chow')
 mallard = Mallard('Minerva McGonagall', 'mallard', 'soggy pond bread slices')
@@ -76,5 +76,9 @@ for animal in critter_cove.animals:
 def feed(self):
 		print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-def __str__(self):
-		return f"{self.name} is a {self.species}"
+def __repr__(self):
+	return f'{self.name} is a {self.species} with chip number {self.chip_number}'
+
+print(varmint_village.last_critter_added)
+print(slither_inn.last_critter_added) 
+print(critter_cove.last_critter_added)
