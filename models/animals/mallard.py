@@ -1,9 +1,16 @@
 from datetime import date
+from models.animals.animals import Animal
 
-class Mallard():
-	def __init__(self, name, species, food):
-		self.name = name
-		self.species = species
-		self.date_added = date.today()
+class Mallard(Animal):
+	def __init__(self, name, species, food, chip_number):
+		super().__init__(name, species, food, chip_number)
 		self.swimming = True
-		self.food = food
+
+
+	@property
+	def chip_number(self):
+		return self.__chip_number
+
+	@chip_number.setter
+	def chip_number(self, number):
+		pass

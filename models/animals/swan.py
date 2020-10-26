@@ -1,10 +1,7 @@
 from datetime import date
+from models.animals.animals import Animal
 
-class Swan():
-	def __init__(self, name, species, food):
-		self.name = name
-		self.species = species
-		self.date_added = date.today()
+class Swan(Animal):
+	def __init__(self, name, species, food, chip_number):
+		super().__init__(name, species, food, chip_number)
 		self.swimming = True
-		self.food = food
-

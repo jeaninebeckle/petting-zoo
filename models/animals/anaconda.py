@@ -1,13 +1,10 @@
 from datetime import date
+from models.animals.animals import Animal
 
-class Anaconda():
+class Anaconda(Animal):
 	def __init__(self, name, species, food, chip_number):
-		self.name = name
-		self.species = species
-		self.date_added = date.today()
+		super().__init__(name, species, food, chip_number)
 		self.slithering = True
-		self.food = food
-		self.__chip_number = chip_number
 	
 	@property
 	def chip_number(self):

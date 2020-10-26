@@ -13,6 +13,7 @@ from .animals.pig import Pig
 from .animals.python import Python
 from .animals.sheep import Sheep
 from .animals.swan import Swan
+from .animals.animals import Animal
 
 from .attractions.pettingzoo import PettingZoo
 from .attractions.snakepit import SnakePit
