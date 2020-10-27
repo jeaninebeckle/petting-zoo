@@ -14,3 +14,5 @@ class Llama(Animal):
 	@chip_number.setter
 	def chip_number(self, number):
 		pass
+
+	

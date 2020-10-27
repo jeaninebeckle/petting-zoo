@@ -15,7 +15,6 @@ class Anaconda(Animal):
 		pass
 
 	def feed(self):
-		print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+		print(f'{self.name} was fed {self.food} and almost ate the intern in the process.')
 
-	# def __str__(self):
-	# 	return (f'{self.name} is an {self.species} with chip number {self.chip_number}')
+

@@ -15,3 +15,6 @@ class Goat(Animal):
 	@chip_number.setter
 	def chip_number(self, number):
 		pass
+
+	def feed(self):
+		print(f'{self.name} was fed his normal {self.food} even though all he wanted to eat was Lembas.')
