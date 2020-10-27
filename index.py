@@ -45,23 +45,23 @@ mallard = Mallard('Minerva McGonagall', 'mallard', 'soggy pond bread slices', 75
 swan = Swan('Severus Snape', 'swan', 'swan chow', 3049877)
 
 
-varmint_village.add_animal(sheep)
-varmint_village.add_animal(donkey)
-varmint_village.add_animal(goat)
-varmint_village.add_animal(llama)
-varmint_village.add_animal(pig)
+varmint_village.add_animal_pythonic(sheep)
+varmint_village.add_animal_pythonic(donkey)
+varmint_village.add_animal_pythonic(goat)
+varmint_village.add_animal_pythonic(llama)
+varmint_village.add_animal_pythonic(pig)
 
-slither_inn.add_animal(anaconda)
-slither_inn.add_animal(copperhead)
-slither_inn.add_animal(cottonmouth)
-slither_inn.add_animal(kingsnake)
-slither_inn.add_animal(python)
+slither_inn.add_animal_pythonic(anaconda)
+slither_inn.add_animal_pythonic(copperhead)
+slither_inn.add_animal_pythonic(cottonmouth)
+slither_inn.add_animal_pythonic(kingsnake)
+slither_inn.add_animal_pythonic(python)
 
-critter_cove.add_animal(bass)
-critter_cove.add_animal(catfish)
-critter_cove.add_animal(goldfish)
-critter_cove.add_animal(mallard)
-critter_cove.add_animal(swan)
+critter_cove.add_animal_pythonic(bass)
+critter_cove.add_animal_pythonic(catfish)
+critter_cove.add_animal_pythonic(goldfish)
+critter_cove.add_animal_pythonic(mallard)
+critter_cove.add_animal_pythonic(swan)
 
 
 for animal in varmint_village.animals:
