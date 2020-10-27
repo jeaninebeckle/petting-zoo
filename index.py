@@ -1,24 +1,24 @@
 from datetime import date
 
-from models.animals.swan import Swan
-from models.animals.sheep import Sheep
-from models.animals.mallard import Mallard
-from models.animals.goldfish import Goldfish
-from models.animals.catfish import Catfish
-from models.animals.bass import Bass
-from models.animals.python import Python
-from models.animals.kingsnake import Kingsnake
-from models.animals.cottonmouth import Cottonmouth
-from models.animals.copperhead import Copperhead
-from models.animals.anaconda import Anaconda
-from models.animals.pig import Pig
-from models.animals.llama import Llama
-from models.animals.goat import Goat
-from models.animals.donkey import Donkey
+from animals import Swan
+from animals import Sheep
+from animals import Mallard
+from animals import Goldfish
+from animals import Catfish
+from animals import Bass
+from animals import Python
+from animals import Kingsnake
+from animals import Cottonmouth
+from animals import Copperhead
+from animals import Anaconda
+from animals import Pig
+from animals import Llama
+from animals import Goat
+from animals import Donkey
 
-from models.attractions.pettingzoo import PettingZoo
-from models.attractions.snakepit import SnakePit
-from models.attractions.wetlands import Wetlands
+from attractions import PettingZoo
+from attractions import SnakePit
+from attractions import Wetlands
 
 
 
@@ -45,23 +45,23 @@ mallard = Mallard('Minerva McGonagall', 'mallard', 'soggy pond bread slices', 75
 swan = Swan('Severus Snape', 'swan', 'swan chow', 3049877)
 
 
-varmint_village.animals.append(sheep)
-varmint_village.animals.append(donkey)
-varmint_village.animals.append(goat)
-varmint_village.animals.append(llama)
-varmint_village.animals.append(pig)
+varmint_village.add_animal(sheep)
+varmint_village.add_animal(donkey)
+varmint_village.add_animal(goat)
+varmint_village.add_animal(llama)
+varmint_village.add_animal(pig)
 
-slither_inn.animals.append(anaconda)
-slither_inn.animals.append(copperhead)
-slither_inn.animals.append(cottonmouth)
-slither_inn.animals.append(kingsnake)
-slither_inn.animals.append(python)
+slither_inn.add_animal(anaconda)
+slither_inn.add_animal(copperhead)
+slither_inn.add_animal(cottonmouth)
+slither_inn.add_animal(kingsnake)
+slither_inn.add_animal(python)
 
-critter_cove.animals.append(bass)
-critter_cove.animals.append(catfish)
-critter_cove.animals.append(goldfish)
-critter_cove.animals.append(mallard)
-critter_cove.animals.append(swan)
+critter_cove.add_animal(bass)
+critter_cove.add_animal(catfish)
+critter_cove.add_animal(goldfish)
+critter_cove.add_animal(mallard)
+critter_cove.add_animal(swan)
 
 
 for animal in varmint_village.animals:
@@ -80,6 +80,3 @@ def __repr__(self):
 print(varmint_village.last_critter_added)
 print(slither_inn.last_critter_added) 
 print(critter_cove.last_critter_added)
-
-
-swan.feed()
