@@ -1,10 +1,18 @@
 from datetime import date
+from models.animals.animals import Animal
 
-class Llama():
-	def __init__(self, name, species, shift, food):
-		self.name = name
-		self.species = species
+class Llama(Animal):
+	def __init__(self, name, species, shift, food, chip_number):
+		super().__init__(name, species, food, chip_number)
 		self.shift = shift
-		self.date_added = date.today()
 		self.walking = True
-		self.food = food
+
+	@property
+	def chip_number(self):
+		return self.__chip_number
+
+	@chip_number.setter
+	def chip_number(self, number):
+		pass
+
+	

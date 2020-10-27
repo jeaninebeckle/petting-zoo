@@ -26,23 +26,23 @@ varmint_village = PettingZoo('Varmint Village', 'soft and cuddly farm animalss')
 slither_inn = SnakePit('Slither Inn', 'animalss that might want to eat you')
 critter_cove = Wetlands('Critter Cove', 'fish and feathered friends')
 
-donkey = Donkey('Donnie Darko', 'donkey', 'morning', 'donkey chow')
+donkey = Donkey('Donnie Darko', 'donkey', 'morning', 'donkey chow', 23408)
 goat = Goat('Gandalf the Grey', 'goat', 'midday', 'goat chow', 2340834)
-llama = Llama('Luna Lovegood', 'llama', 'afternoon', 'llama chow')
-sheep = Sheep('Spongebob Squarepants', 'sheep', 'morning', 'krabby patties')
-pig = Pig('Peter Pan', 'pig', 'afternoon', 'pig chow')
+llama = Llama('Luna Lovegood', 'llama', 'afternoon', 'llama chow', 24545)
+sheep = Sheep('Spongebob Squarepants', 'sheep', 'morning', 'krabby patties', 4308540)
+pig = Pig('Peter Pan', 'pig', 'afternoon', 'pig chow', 39473)
 
 anaconda = Anaconda('Aragorn', 'anaconda', 'anaconda chow', 34574579)
-copperhead = Copperhead('Captain Crunch', 'copperhead', 'cereal')
-cottonmouth = Cottonmouth('Chewbacca', 'cottonmouth', 'babies')
-kingsnake = Kingsnake('Kirby', 'kingsnake', 'mice')
-python = Python('Peter Pettigrew', 'python', 'python chow')
+copperhead = Copperhead('Captain Crunch', 'copperhead', 'cereal', 304584)
+cottonmouth = Cottonmouth('Chewbacca', 'cottonmouth', 'babies', 4359485)
+kingsnake = Kingsnake('Kirby', 'kingsnake', 'mice', 405439)
+python = Python('Peter Pettigrew', 'python', 'python chow', 348509)
 
 bass = Bass('Beetlejuice', 'bass', 'bass chow', 3204803)
-catfish = Catfish('Cheshire Cat', 'catfish', 'catfish chow')
-goldfish = Goldfish('Godzilla', 'goldfish', 'goldfish chow')
-mallard = Mallard('Minerva McGonagall', 'mallard', 'soggy pond bread slices')
-swan = Swan('Severus Snape', 'swan', 'swan chow')
+catfish = Catfish('Cheshire Cat', 'catfish', 'catfish chow', 1844590)
+goldfish = Goldfish('Godzilla', 'goldfish', 'goldfish chow', 897450)
+mallard = Mallard('Minerva McGonagall', 'mallard', 'soggy pond bread slices', 756590)
+swan = Swan('Severus Snape', 'swan', 'swan chow', 3049877)
 
 
 varmint_village.animals.append(sheep)
@@ -73,8 +73,6 @@ for animal in slither_inn.animals:
 for animal in critter_cove.animals:
     print(f'You can find {animal.name} the {animal.species} in {critter_cove.attraction_name}')
 
-def feed(self):
-		print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
 def __repr__(self):
 	return f'{self.name} is a {self.species} with chip number {self.chip_number}'
@@ -82,3 +80,6 @@ def __repr__(self):
 print(varmint_village.last_critter_added)
 print(slither_inn.last_critter_added) 
 print(critter_cove.last_critter_added)
+
+
+swan.feed()
